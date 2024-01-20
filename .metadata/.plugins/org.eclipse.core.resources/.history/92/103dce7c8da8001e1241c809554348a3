@@ -1,0 +1,34 @@
+package com.hdfc.set2;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class FirstCharOfEachString {
+
+	public static void main(String[] test) {
+
+		String str[] = { "dharm", "raj", "chaudhary", "dharya", "patel" };
+
+		firstCharOfEachStringArray(str);
+		System.out.println(firstCharOfEachString(str));
+
+	}
+
+	private static void firstCharOfEachStringArray(String[] str) {
+
+		Arrays.stream(str).forEach(ele -> System.out.print(ele.charAt(0)+" "));
+
+	}
+	
+	private static List<Character> firstCharOfEachString(String[] str) {
+
+		List<Character> test = Arrays.stream(str.to)
+				.collect(Collectors.toList());
+
+		return test;
+
+	}
+
+}

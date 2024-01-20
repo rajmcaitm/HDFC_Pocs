@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\hdfc_poc\WellsFargoQuestion"/>
+			<item value="D:\hdfc_poc\SmsOtp"/>
+			<item value="D:\hdfc_poc\RemittanceManagement"/>
+			<item value="D:\hdfc_poc\onlineinternetbanking"/>
+			<item value="D:\hdfc_poc\LoanManagementSystem"/>
+			<item value="D:\hdfc_poc\LeadManagementSystem"/>
+			<item value="D:\hdfc_poc\ForgotCredentials"/>
+			<item value="D:\hdfc_poc\FCYLoanProcess"/>
+			<item value="D:\hdfc_poc\exchange"/>
+			<item value="D:\hdfc_poc\CheckerFunctionalities"/>
+			<item value="D:\hdfc_poc\captcha"/>
+			<item value="D:\hdfc_poc\AuthenticatorServicet"/>
+			<item value="D:\hdfc_poc\AccountManagement"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

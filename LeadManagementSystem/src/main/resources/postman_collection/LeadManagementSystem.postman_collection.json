@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "05978008-4289-4c8c-9d0a-5b672a83d39e",
+		"name": "LeadManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sendOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/sendOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"sendOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_lead",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custId\": 123460,\r\n    \"custMobileNo\": 8923123480,\r\n    \"custName\": \"bipin\",\r\n    \"custEmailId\": \"bipin@persistent.com\",\r\n    \"custAccountNo\": 1234567890123458,\r\n    \"custLeadType\": \"LOAN\",\r\n    \"custLeadsubType\": \"FCY LOAN\",\r\n    \"custBranchId\": 112,\r\n    \"custBranchName\": \"silkboard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/createLead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"createLead"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/customerId/123458",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"customerId",
+						"123458"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get lead by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/lead/L43357",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"lead",
+						"L43357"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all lead",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/leads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate_OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\": 691786\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/validateOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"validateOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update lead",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custId\": 123459,\r\n    \"custMobileNo\": 8923123480,\r\n    \"custName\": \"bipin bihari\",\r\n    \"custEmailId\": \"bipin_bihari@persistent.com\",\r\n    \"custAccountNo\": 1234567890123459,\r\n    \"custLeadType\": \"LOAN\",\r\n    \"custLeadsubType\": \"CAR LOAN\",\r\n    \"custBranchId\": 112,\r\n    \"custBranchName\": \"silkboard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/leads/L68849",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"leads",
+						"L68849"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

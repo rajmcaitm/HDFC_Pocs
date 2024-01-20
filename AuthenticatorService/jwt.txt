@@ -1,0 +1,1 @@
+{message='Login Successful', token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXNzMTIzNDUiLCJpYXQiOjE2ODc4NzE5OTV9.r2AMPJvYo1lhSa0BrPCWOI9FBqglGNmb_kVpX_q4YUc}

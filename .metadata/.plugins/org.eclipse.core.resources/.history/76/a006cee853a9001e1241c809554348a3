@@ -1,0 +1,32 @@
+package com.hdfc.test;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class EmployeeList {
+
+	public static void main(String[] args) {
+		List<Employees> emp = new ArrayList<>();
+		emp.add(new Employees(1, "ram"));
+		emp.add(new Employees(2, "shyam"));
+		emp.add(new Employees(1, "ram"));
+		emp.add(new Employees(2, "shyam"));
+		emp.add(new Employees(1, "ram"));
+
+		System.out.println(getEempList(emp));
+
+	}
+
+	public static Set<String> getEempList(List<Employees> empList) {
+
+		empList.sort((Employees e1, Employees e2) -> e1.getFirstName().compareTo(e2.getFirstName()));
+		Set<String> newList = empList.stream().distinct().map(Employees::getFirstName).sorted().collect(Collectors.toSet());
+
+		return newList;
+
+	}
+
+}

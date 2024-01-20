@@ -1,0 +1,29 @@
+package com.hdfc.set2;
+
+import java.util.Arrays;
+
+public class FirstCharOfEachString {
+
+	public static void main(String[] test) {
+
+		String str[] = { "dharm", "raj", "chaudhary", "dharya", "patel" };
+
+		firstCharOfEachStringArray(str);
+
+	}
+
+	private static void firstCharOfEachStringArray(String[] str) {
+
+		Arrays.stream(str).forEach(ele -> System.out.print(ele.charAt(0)+" "));
+
+	}
+	
+	private static char[] firstCharOfEachString(String[] str) {
+
+		Arrays.stream(str).forEach(ele -> System.out.print(ele.charAt(0)+" "));
+		
+		return null;
+
+	}
+
+}
